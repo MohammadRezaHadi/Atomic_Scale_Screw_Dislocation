@@ -94,8 +94,6 @@ The LAMMPS scripts generate:
 
 ## References
 
-If you use this repository in your work, please cite the relevant tools:
-
 - **Atomsk**: P. Hirel, *Atomsk: A tool for manipulating and converting atomic data files*, Comput. Phys. Commun. **197**, 212 (2015).
 - **LAMMPS**: A. P. Thompson et al., *LAMMPS – a flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales*, Comput. Phys. Commun. **271**, 108171 (2022).
 
