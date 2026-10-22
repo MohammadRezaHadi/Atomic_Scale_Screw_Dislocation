@@ -11,7 +11,7 @@ The workflow combines **Atomsk** for building dislocation structures and **LAMMP
 ```
 Atomic_Scale_Screw_Dislocation/
 │
-├── Atomsk Commands/               # Atomsk scripts to generate dislocation structures
+├── Atomsk Commands/               # Atomsk scripts to generate dislocation structures (Also the .lmp files for LAMMPS codes)
 │   ├── Single_Screw_Dislocation.txt
 │   ├── Dipole_Screw_Dislocation.txt
 │   └── Quadrupole_Screw_Dislocation.txt
@@ -78,6 +78,7 @@ The dump files in `Dump Files/` can be opened in **OVITO** to visualize:
 - Centrosymmetry parameter (`c_csym`)
 - Potential energy per atom (`c_peatom`)
 - Stress components (`c_stress[1]`–`c_stress[6]`)
+- Dislocation analysis (`DXA`)
 
 ---
 
@@ -88,12 +89,6 @@ The LAMMPS scripts generate:
 - Relaxed atomic configurations (`*_relaxed.lmp`)
 - Force and stress dump files (`dump.screw_*_force`)
 - Movie-style dump files for minimization trajectories (`dump.screw_*_movie_*`)
-
----
-
-## Notes
-
-- The `Dump Files/` directory contains large output files.
 
 ---
 
