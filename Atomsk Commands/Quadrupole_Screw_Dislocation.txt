@@ -1,0 +1,1 @@
+atomsk --create fcc 4.0405 Al orient [1-12] [-111] [110] -duplicate 100 80 20 -dislocation 0.17*box 0.2*box screw Z Y 2.857064949 -dislocation 0.67*box 0.3*box screw Z Y -2.857064949 -dislocation 0.33*box 0.8*box screw Z Y -2.857064949 -dislocation 0.83*box 0.7*box screw Z Y 2.857064949 Al_screw_quadrupole.cfg lmp
