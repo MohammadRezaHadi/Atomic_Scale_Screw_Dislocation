@@ -1,0 +1,43 @@
+# FCC Aluminum – 1/2<110> Screw Dislocation (MTP + ZBL)
+units           metal
+dimension       3
+boundary        p p p
+atom_style      atomic
+
+# Read structure from Atomsk
+read_data       Al_screw_single.lmp
+#read_data       Al_screw_dipole.lmp
+#read_data       Al_screw_quadrupole.lmp
+
+# Interatomic Potential (MTP + ZBL)
+pair_style      hybrid/overlay mlip mlip.ini zbl 0.5 1.0
+pair_coeff      * * mlip mlip.ini
+pair_coeff      * * zbl 13 13
+
+# Neighbor Settings
+neighbor        2.0 bin
+neigh_modify    delay 10 check yes
+
+# Computes (for OVITO analysis)
+compute         csym all centro/atom fcc
+compute         peatom all pe/atom
+compute         stress all stress/atom NULL
+
+# Thermodynamic Output
+thermo          1
+thermo_style    custom step pe lx ly lz press pxx pyy pzz
+
+# Energy Minimization
+reset_timestep  0
+
+dump            1 all custom 10 dump.screw_single_movie_* id type x y z fx fy fz c_csym c_peatom c_stress[1] c_stress[2] c_stress[3] c_stress[4] c_stress[5] c_stress[6]
+#dump            1 all custom 10 dump.screw_dipole_movie_* id type x y z fx fy fz c_csym c_peatom c_stress[1] c_stress[2] c_stress[3] c_stress[4] c_stress[5] c_stress[6]
+#dump            1 all custom 10 dump.screw_quadrupole_movie_* id type x y z fx fy fz c_csym c_peatom c_stress[1] c_stress[2] c_stress[3] c_stress[4] c_stress[5] c_stress[6]
+dump_modify     1 sort id
+
+min_style       cg
+minimize        1.0e-10 1.0e-8 1000 1000
+
+# Dump forces after relaxation
+run     0
+print "Minimization complete."
