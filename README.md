@@ -74,7 +74,7 @@ lmp -in MTP.in
 
 The dump files in `Dump Files/` can be opened in **OVITO** to visualize:
 
-- Atomic positions and types
+- Atomic positions
 - Centrosymmetry parameter (`c_csym`)
 - Potential energy per atom (`c_peatom`)
 - Stress components (`c_stress[1]`–`c_stress[6]`)
