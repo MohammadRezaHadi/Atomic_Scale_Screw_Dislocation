@@ -64,7 +64,7 @@ Navigate to the `Codes/` directory and run the desired input script:
 # EAM/MEAM potential
 lmp -in EAM_MEAM.in
 
-# MTP + ZBL potential
+# MTP potential
 lmp -in MTP.in
 ```
 
