@@ -1,5 +1,0 @@
-1)
-atomsk --create fcc 4.05 Al orient [1-12] [-111] [110] -duplicate 40 20 20 Al_supercell.xsf
-
-2)
-atomsk Al_supercell.xsf -dislocation 0.5*box 0.5*box screw Z Y 2.863782464 Al_screw_single.xsf lmp
