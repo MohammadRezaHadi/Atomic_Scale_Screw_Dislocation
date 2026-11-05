@@ -33,7 +33,7 @@ Atomic_Scale_Screw_Dislocation/
 |------|---------|
 | [Atomsk](https://atomsk.univ-lille.fr/) | Generate FCC supercells and insert screw dislocations |
 | [LAMMPS](https://www.lammps.org/) | Energy minimization and force calculation |
-| [OVITO](https://www.ovito.org/) (optional) | Visualize dump files and compute structural properties |
+| [OVITO](https://www.ovito.org/) | Visualize dump files and compute structural properties |
 
 ### Interatomic Potentials
 
@@ -78,6 +78,7 @@ The dump files in `Dump Files/` can be opened in **OVITO** to visualize:
 - Centrosymmetry parameter (`c_csym`)
 - Potential energy per atom (`c_peatom`)
 - Stress components (`c_stress[1]`–`c_stress[6]`)
+- Dislocation analysis (`DXA`)
 
 ---
 
@@ -91,13 +92,6 @@ The LAMMPS scripts generate:
 
 ---
 
-## Notes
-
-- The `Dump Files/` directory contains large output files. Cloning the repository may take time if these files are included.
-- To keep the repository lightweight, consider using **Git LFS** for large dump files or linking to an external data archive (e.g., Zenodo).
-
----
-
 ## References
 
 If you use this repository in your work, please cite the relevant tools:
@@ -107,13 +101,8 @@ If you use this repository in your work, please cite the relevant tools:
 
 ---
 
-## License
-
-This project is provided for academic and research purposes. Please contact the repository owner for licensing inquiries.
-
----
-
 ## Contact
 
 **Mohammad Reza Hadi**  
 GitHub: [@MohammadRezaHadi](https://github.com/MohammadRezaHadi)
+Email: mohammadrezahadi@ut.ac.ir
