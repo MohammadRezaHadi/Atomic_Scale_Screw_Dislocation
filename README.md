@@ -1,6 +1,6 @@
 # Atomic Scale Screw Dislocation
 
-This repository contains input scripts, structure-generation commands, and simulation outputs for studying **1/2⟨110⟩ screw dislocations in FCC Aluminum** at the atomic scale.
+This repository contains input scripts, structure-generation commands, and simulation outputs for studying **screw dislocations in FCC Aluminum** at the atomic scale.
 
 The workflow combines **Atomsk** for building dislocation structures and **LAMMPS** for energy minimization and force evaluation using different interatomic potentials (EAM/MEAM and Machine-Learning MTP).
 
