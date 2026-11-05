@@ -18,7 +18,7 @@ Atomic_Scale_Screw_Dislocation/
 │
 ├── Codes/                        # LAMMPS input scripts
 │   ├── EAM_MEAM.in               # Energy minimization with EAM/MEAM potentials
-│   └── MTP.in                    # Energy minimization with MTP + ZBL potential
+│   └── MTP.in                    # Energy minimization with MTP potential
 │
 └── Dump Files/                   # LAMMPS dump outputs for visualization/analysis
     ├── Dipole Screw Dislocation
@@ -64,7 +64,7 @@ Navigate to the `Codes/` directory and run the desired input script:
 # EAM/MEAM potential
 lmp -in EAM_MEAM.in
 
-# MTP + ZBL potential
+# MTP potential
 lmp -in MTP.in
 ```
 
