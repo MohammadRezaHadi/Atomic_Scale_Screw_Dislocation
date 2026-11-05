@@ -11,18 +11,18 @@ The workflow combines **Atomsk** for building dislocation structures and **LAMMP
 ```
 Atomic_Scale_Screw_Dislocation/
 │
-├── Atomsk Commands/               # Atomsk scripts to generate dislocation structures
+├── Atomsk Commands/              # Atomsk scripts to generate dislocation structures
 │   ├── Single_Screw_Dislocation.txt
 │   ├── Dipole_Screw_Dislocation.txt
 │   └── Quadrupole_Screw_Dislocation.txt
 │
-├── Codes/                         # LAMMPS input scripts
+├── Codes/                        # LAMMPS input scripts
 │   ├── EAM_MEAM.in               # Energy minimization with EAM/MEAM potentials
 │   └── MTP.in                    # Energy minimization with MTP + ZBL potential
 │
-└── Dump Files/                    # LAMMPS dump outputs for visualization/analysis
-    ├── Dipole Screw Annihilation/
-    └── Quadrupole Screw Annihilation/
+└── Dump Files/                   # LAMMPS dump outputs for visualization/analysis
+    ├── Dipole Screw Dislocation
+    └── Quadrupole Screw Dislocation
 ```
 
 ---
